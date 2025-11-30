@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "dashboard": "Home",
+    "prediction": "Health Check",
+    "statistics": "Statistics",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "profile": "Profile",
+    "logout": "Logout",
+    "userDashboard": "Dashboard",
+    "adminDashboard": "Admin Panel"
+  },
+  "landing": {
+    "heroTitle": "Protect Your Lung Health with AI",
+    "heroSubtitle": "Early detection of respiratory disease risks and real-time air quality monitoring in one trusted medical application.",
+    "ctaPredict": "Check Risk Now",
+    "ctaMonitor": "View Air Map",
+    "feature1Title": "Smart AI Analysis",
+    "feature1Desc": "Naive Bayes algorithm to predict risks of Asthma, COPD, and Infections.",
+    "feature2Title": "Real-time Monitoring",
+    "feature2Desc": "Latest Air Quality Index (AQI) data from major cities in Indonesia.",
+    "feature3Title": "Medical Advice",
+    "feature3Desc": "Personalized health recommendations based on your test results.",
+    "heroVisual": {
+      "statusLabel": "Lung Status",
+      "statusValue": "Healthy",
+      "asthmaRisk": "Asthma Risk",
+      "copdRisk": "COPD Risk",
+      "low": "Low"
+    }
+  },
+  "dashboard": {
+    "title": "Air Quality Monitor",
+    "subtitle": "Pollution distribution map and current air quality index",
+    "aqiTitle": "Major Cities Air Quality (AQI)",
+    "trendTitle": "Pollution Trend This Week",
+    "mapTitle": "Air Quality Distribution Map",
+    "adviceTitle": "Respiratory Health Guide",
+    "seeMore": "See All Cities",
+    "seeLess": "Show Less",
+    "good": "Good",
+    "moderate": "Moderate",
+    "unhealthy": "Unhealthy",
+    "veryUnhealthy": "Very Unhealthy",
+    "hazardous": "Hazardous"
+  },
+  "prediction": {
+    "title": "Respiratory Disease Prediction",
+    "subtitle": "Answer the following questions to assess your respiratory disease risk",
+    "submit": "Submit Prediction",
+    "reset": "Reset",
+    "resultsTitle": "Prediction Results",
+    "riskLevels": "Disease Risk Levels",
+    "healthTips": "Health Tips",
+    "chronicCough": "Chronic Cough",
+    "asthma": "Asthma",
+    "copd": "COPD",
+    "respiratoryInfection": "Respiratory Infection",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "veryHigh": "Very High"
+  },
+  "statistics": {
+    "title": "Statistics & Correlation",
+    "subtitle": "Analyze the relationship between air quality and disease risk",
+    "correlationTitle": "Pollution vs Disease Risk Correlation",
+    "distributionTitle": "Risk Distribution by City"
+  },
+  "advice": {
+    "good": "Air quality is good. Safe for outdoor activities.",
+    "moderate": "Air quality is moderate. Sensitive individuals should limit prolonged outdoor activities.",
+    "unhealthy": "Unhealthy. Wear a mask and limit outdoor activities.",
+    "veryUnhealthy": "Very unhealthy! Avoid outdoor activities. Use indoor air purifier.",
+    "hazardous": "Hazardous! Stay indoors. Wear N95 mask if going outside is necessary."
+  },
+  "profile": {
+    "title": "My Profile",
+    "editProfile": "Edit Profile",
+    "changePassword": "Change Password",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "joinedDate": "Joined",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "updateSuccess": "Profile updated successfully",
+    "updateError": "Failed to update profile",
+    "passwordUpdateSuccess": "Password changed successfully",
+    "passwordUpdateError": "Failed to change password",
+    "user": "User",
+    "admin": "Administrator"
+  },
+  "userDashboard": {
+    "title": "Welcome back",
+    "totalPredictions": "Total Predictions",
+    "lastPrediction": "Last Prediction",
+    "recentActivity": "Recent Activity",
+    "quickActions": "Quick Actions",
+    "newPrediction": "New Health Check",
+    "viewHistory": "View All History",
+    "noPredictions": "No predictions yet. Start your first health check!"
+  },
+  "adminDashboard": {
+    "title": "Admin Dashboard",
+    "overview": "System Overview",
+    "totalUsers": "Total Users",
+    "totalPredictions": "Total Predictions",
+    "recentUsers": "Recent Users",
+    "recentPredictions": "Recent Predictions",
+    "userManagement": "User Management"
+  }
+}

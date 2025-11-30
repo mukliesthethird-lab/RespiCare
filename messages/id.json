@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "dashboard": "Beranda",
+    "prediction": "Cek Kesehatan",
+    "statistics": "Data Statistik",
+    "darkMode": "Mode Gelap",
+    "lightMode": "Mode Terang",
+    "language": "Bahasa",
+    "profile": "Profil",
+    "logout": "Keluar",
+    "userDashboard": "Dashboard",
+    "adminDashboard": "Panel Admin"
+  },
+  "landing": {
+    "heroTitle": "Lindungi Kesehatan Paru-Paru Anda dengan AI",
+    "heroSubtitle": "Deteksi dini risiko penyakit pernapasan dan pantau kualitas udara di sekitar Anda secara real-time dalam satu aplikasi medis terpercaya.",
+    "ctaPredict": "Cek Risiko Sekarang",
+    "ctaMonitor": "Lihat Peta Udara",
+    "feature1Title": "Analisis AI Cerdas",
+    "feature1Desc": "Algoritma Naive Bayes untuk prediksi risiko Asma, PPOK, dan Infeksi.",
+    "feature2Title": "Monitoring Real-time",
+    "feature2Desc": "Data kualitas udara (AQI) terkini dari berbagai kota di Indonesia.",
+    "feature3Title": "Saran Medis",
+    "feature3Desc": "Rekomendasi kesehatan yang dipersonalisasi berdasarkan hasil tes.",
+    "heroVisual": {
+      "statusLabel": "Status Paru-Paru",
+      "statusValue": "Sehat",
+      "asthmaRisk": "Risiko Asma",
+      "copdRisk": "Risiko PPOK",
+      "low": "Rendah"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard Kualitas Udara Indonesia",
+    "subtitle": "Pantau kualitas udara dan lindungi kesehatan pernapasan Anda",
+    "aqiTitle": "Indeks Kualitas Udara (AQI)",
+    "trendTitle": "Trend Polusi 7 Hari Terakhir",
+    "mapTitle": "Peta Kualitas Udara Indonesia",
+    "adviceTitle": "Saran Pencegahan",
+    "seeMore": "Lihat Semua Kota",
+    "seeLess": "Tampilkan Lebih Sedikit",
+    "good": "Baik",
+    "moderate": "Sedang",
+    "unhealthy": "Tidak Sehat",
+    "veryUnhealthy": "Sangat Tidak Sehat",
+    "hazardous": "Berbahaya"
+  },
+  "prediction": {
+    "title": "Prediksi Penyakit Pernapasan",
+    "subtitle": "Jawab pertanyaan berikut untuk mengetahui risiko penyakit pernapasan Anda",
+    "submit": "Kirim Prediksi",
+    "reset": "Ulangi",
+    "resultsTitle": "Hasil Prediksi",
+    "riskLevels": "Tingkat Risiko Penyakit",
+    "healthTips": "Saran Kesehatan",
+    "chronicCough": "Batuk Kronis",
+    "asthma": "Asma",
+    "copd": "PPOK",
+    "respiratoryInfection": "Infeksi Saluran Pernapasan",
+    "low": "Rendah",
+    "medium": "Sedang",
+    "high": "Tinggi",
+    "veryHigh": "Sangat Tinggi"
+  },
+  "statistics": {
+    "title": "Statistik & Korelasi",
+    "subtitle": "Analisis hubungan antara kualitas udara dan risiko penyakit",
+    "correlationTitle": "Korelasi Polusi vs Risiko Penyakit",
+    "distributionTitle": "Distribusi Risiko per Kota"
+  },
+  "advice": {
+    "good": "Kualitas udara baik. Aman untuk aktivitas outdoor.",
+    "moderate": "Kualitas udara sedang. Orang sensitif sebaiknya mengurangi aktivitas outdoor berkepanjangan.",
+    "unhealthy": "Tidak sehat. Gunakan masker dan batasi aktivitas outdoor.",
+    "veryUnhealthy": "Sangat tidak sehat! Hindari aktivitas outdoor. Gunakan air purifier indoor.",
+    "hazardous": "Berbahaya! Tetap di dalam ruangan. Gunakan masker N95 jika harus keluar."
+  },
+  "profile": {
+    "title": "Profil Saya",
+    "editProfile": "Edit Profil",
+    "changePassword": "Ubah Password",
+    "name": "Nama",
+    "email": "Email",
+    "role": "Peran",
+    "joinedDate": "Terdaftar",
+    "saveChanges": "Simpan Perubahan",
+    "cancel": "Batal",
+    "currentPassword": "Password Saat Ini",
+    "newPassword": "Password Baru",
+    "confirmPassword": "Konfirmasi Password",
+    "updateSuccess": "Profil berhasil diperbarui",
+    "updateError": "Gagal memperbarui profil",
+    "passwordUpdateSuccess": "Password berhasil diubah",
+    "passwordUpdateError": "Gagal mengubah password",
+    "user": "Pengguna",
+    "admin": "Administrator"
+  },
+  "userDashboard": {
+    "title": "Selamat datang kembali",
+    "totalPredictions": "Total Prediksi",
+    "lastPrediction": "Prediksi Terakhir",
+    "recentActivity": "Aktivitas Terbaru",
+    "quickActions": "Aksi Cepat",
+    "newPrediction": "Cek Kesehatan Baru",
+    "viewHistory": "Lihat Semua Riwayat",
+    "noPredictions": "Belum ada prediksi. Mulai cek kesehatan pertama Anda!"
+  },
+  "adminDashboard": {
+    "title": "Dashboard Admin",
+    "overview": "Ringkasan Sistem",
+    "totalUsers": "Total Pengguna",
+    "totalPredictions": "Total Prediksi",
+    "recentUsers": "Pengguna Terbaru",
+    "recentPredictions": "Prediksi Terbaru",
+    "userManagement": "Manajemen Pengguna"
+  }
+}
