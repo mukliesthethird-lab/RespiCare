@@ -14,16 +14,15 @@ The application is fully functional with:
 - Disease prediction results with animated visualizations
 - Statistics page showing correlations between air quality and disease risk
 
-## Recent Changes (November 25, 2025)
-- Initial project setup with Next.js 14, TypeScript, and TailwindCSS
-- Implemented i18n multi-language support with next-intl
-- Created mock data for Indonesian cities air quality monitoring
-- Built complete UI component library (Navigation, AQI Cards, Maps, Charts, Forms)
-- Implemented theme provider for dark/light mode switching
-- Created 25-question respiratory disease prediction algorithm
-- Added interactive charts using Recharts with animations
-- Implemented prediction results visualization with pie charts and health tips
-- Built statistics page with correlation analysis
+## Recent Changes (November 30, 2025)
+- **PDF Export**: Implemented functionality to download prediction results as a PDF.
+- **User Authentication**: Added Login and Signup pages with password visibility toggle.
+- **Prediction History**: Auto-save prediction results for logged-in users.
+- **UI/UX Enhancements**:
+    - Integrated RespiCare logo throughout the application.
+    - Fixed dark theme issues on auth pages.
+    - Improved logo visibility and sizing.
+- **Bug Fixes**: Resolved deployment errors and Discord bot command issues.
 
 ## Project Architecture
 
@@ -34,6 +33,7 @@ The application is fully functional with:
 - **Maps**: React Leaflet for Indonesia air quality map
 - **Animations**: Framer Motion for smooth transitions
 - **Internationalization**: next-intl for Indonesian/English support
+- **PDF Generation**: html2canvas and jspdf
 
 ### Directory Structure
 ```
@@ -42,7 +42,9 @@ The application is fully functional with:
 │   │   ├── layout.tsx     # Locale-specific layout
 │   │   ├── page.tsx       # Dashboard page
 │   │   ├── prediction/    # Disease prediction page
-│   │   └── statistics/    # Statistics & correlation page
+│   │   ├── statistics/    # Statistics & correlation page
+│   │   ├── auth/          # Authentication pages (Login/Signup)
+│   │   └── dashboard/     # User dashboard
 │   ├── layout.tsx         # Root layout
 │   ├── page.tsx           # Root redirect
 │   └── globals.css        # Global styles
@@ -89,12 +91,13 @@ The application is fully functional with:
   - COPD (Chronic Obstructive Pulmonary Disease)
   - Respiratory Infections
 
-#### 3. Results Visualization
+#### 3. Results Visualization & Management
 - Percentage risk for each disease type
 - Animated pie chart showing distribution
 - Color-coded risk levels (Low, Medium, High, Very High)
 - Personalized health tips based on results
-- Smooth animations and transitions
+- **PDF Export**: Download detailed results report
+- **History**: View past prediction results (for logged-in users)
 
 #### 4. Statistics & Correlation
 - Scatter plot showing AQI vs disease risk correlation
@@ -121,8 +124,6 @@ The prediction algorithm uses a weighted scoring system where:
 - Comments in code explain functionality clearly
 
 ## Future Enhancements
-- PDF/CSV export for prediction results
 - Real API integration for live air quality data
-- User authentication and prediction history tracking
 - Correlation heatmap for advanced analysis
 - Additional languages support
