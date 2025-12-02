@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { Mail, Lock, AlertCircle, CheckCircle2, Eye, EyeOff } from 'lucide-react';
 
 interface LoginFormProps {
@@ -11,6 +11,9 @@ interface LoginFormProps {
 
 export default function LoginForm({ locale }: LoginFormProps) {
     const router = useRouter();
+    const searchParams = useSearchParams();
+    const callbackUrl = searchParams.get('callbackUrl');
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -67,7 +70,12 @@ export default function LoginForm({ locale }: LoginFormProps) {
                     setError(locale === 'id' ? 'Terjadi kesalahan. Silakan coba lagi.' : 'An error occurred. Please try again.');
                 }
             } else {
-                router.push(`/${locale}`);
+                // If there's a callback URL, use it. Otherwise go to dashboard
+                if (callbackUrl) {
+                    router.push(callbackUrl);
+                } else {
+                    router.push(`/${locale}`);
+                }
                 router.refresh();
             }
         } catch (error) {
@@ -109,8 +117,8 @@ export default function LoginForm({ locale }: LoginFormProps) {
                         }}
                         onBlur={handleEmailBlur}
                         className={`w-full pl-10 pr-10 py-2.5 border rounded-lg focus:ring-2 focus:ring-medical-primary focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-sm transition-colors ${fieldErrors.email
-                                ? 'border-red-500 dark:border-red-400'
-                                : 'border-gray-300 dark:border-gray-600'
+                            ? 'border-red-500 dark:border-red-400'
+                            : 'border-gray-300 dark:border-gray-600'
                             }`}
                         placeholder="nama@contoh.com"
                         required
