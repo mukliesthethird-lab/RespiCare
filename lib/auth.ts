@@ -46,9 +46,7 @@ export const authOptions: NextAuthOptions = {
     session: {
         strategy: "jwt",
     },
-    secret: process.env.NODE_ENV === "development"
-        ? `dev-secret-${Date.now()}`
-        : process.env.NEXTAUTH_SECRET,
+    secret: process.env.NEXTAUTH_SECRET || "dev-secret-key-fallback",
     callbacks: {
         async jwt({ token, user }) {
             if (user) {
